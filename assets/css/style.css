@@ -1,3 +1,4 @@
+/* common */
 *,
 *:before,
 *:after {
@@ -42,6 +43,54 @@ html{
   color: #fff !important;
 }
 
+.text-center{
+  text-align: center !important;
+}
+
+.clear {
+  clear: both;
+}
+
+.mt-8{
+  margin-top: 8px !important;
+}
+
+.mt-16{
+  margin-top: 16px !important;
+}
+
+.row{
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.row::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.col{
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.col-half{
+  width: 50%;
+}
+
+.col-full{
+  width: 100%;
+}
+
+.col-third{
+  width: 33.3333%;
+}
+
+
+  
+/* MAIN */
 #main{
 
 }
@@ -199,12 +248,6 @@ html{
   overflow: hidden;
 }
 
-#content .member-item{
-  float: left;
-  text-align: center;
-  width: 33.33333% ;
-}
-
 #content .member-name{
   font-size: 15px;
   
@@ -225,25 +268,122 @@ html{
 }
 
 .tickets-list{
-  color:#757575 ;
   background-color: #fff;
+  list-style: none;
   margin-top: 40px;
 }
 
-.tickets-list .li{
+.tickets-list li{
+  color: #757575;
   font-size: 15px;
-  padding: 12px 16px;
-  border-bottom: 1px solid #ddd;
+  padding: 11px 16px;
+  border-bottom: 1px solid #ddd;  
 }
 
 .tickets-list .sold-out{
-
+  background-color: #f44336;
+  color: #fff;
+  padding: 3px 4px;
+  margin-left: 16px;
 }
 
 .tickets-list .quantity{
+  float: right;
+  width: 24px;
+  height: 24px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+}
+
+.places-list {
+  margin-top: 32px;
+  margin-bottom: 48px;
+}
+
+.place-item {
+  width: 33.33333%;
+}
+
+.place-img {
+  width: 100%;
+  display: block;
+}
+
+.place-img:hover{
+  opacity: 60%;
+}
+
+.place-body {
+  background-color: #fff;
+  padding: 16px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.place-heading {
+  font-size: 15px;
+}
+
+.place-time {
+  margin-top: 15px;
+}
+
+.place-desc {
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+.place-buy-btn {
+  color: #fff;
+  background-color: #000;
+  text-decoration:none ;
+  padding: 11px 16px;
+  display: inline-block;
+  margin: 15px;
+
+}
+
+.place-buy-btn:hover{
+  background-color: #000;
+  color: #ccc;
+} 
+
+/* contact form */
+.contact-content{
+  margin-top: 48px;
+}
+
+.contact-info{
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+  width: 30px;
+  display: inline-block;
+}
+
+.contact-form{
+  font-size: 15px;
+}
+
+.contact-form .form-control{
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
   
 }
 
+.form-submit-btn{
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+  padding: 10px 16px;
+  float: right;
+}
 
 /* Footer section */
 #footer{
