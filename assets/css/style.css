@@ -47,6 +47,22 @@ html{
   text-align: center !important;
 }
 
+.btn {
+  color: #fff;
+  background-color: #000;
+  text-decoration:none ;
+  padding: 11px 16px;
+  display: inline-block;
+  margin-top: 15px;
+
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: #000;
+  background-color: #ccc;
+}
+
 .clear {
   clear: both;
 }
@@ -216,7 +232,7 @@ html{
 
 #content .content-section{
   width: 800px;
-  padding: 64px 0px;
+  padding: 64px 0px 112px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -300,7 +316,6 @@ html{
 
 .places-list {
   margin-top: 32px;
-  margin-bottom: 48px;
 }
 
 .place-item {
@@ -336,20 +351,6 @@ html{
   line-height: 1.6;
 }
 
-.place-buy-btn {
-  color: #fff;
-  background-color: #000;
-  text-decoration:none ;
-  padding: 11px 16px;
-  display: inline-block;
-  margin: 15px;
-
-}
-
-.place-buy-btn:hover{
-  background-color: #000;
-  color: #ccc;
-} 
 
 /* contact form */
 .contact-content{
@@ -377,16 +378,39 @@ html{
   
 }
 
-.form-submit-btn{
-  background-color: #000;
-  color: #fff;
-  border: 1px solid #000;
-  padding: 10px 16px;
-  float: right;
+/* map-section */
+.map-section img {
+  width: 100%;
 }
 
 /* Footer section */
 #footer{
-
+  padding: 64px 16px;
+  text-align: center;
 }
+
+#footer .social-list{
+  font-size: 24px;
+}
+
+#footer .social-list a{
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+
+#footer .copyright a:hover,
+#footer .social-list a:hover{
+  color: rgba(0, 0, 0, 0.3)
+}
+
+#footer .copyright{
+  margin-top: 15px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a{
+  color: rgba(0, 0, 0, 0.6);
+}
+
+
 
